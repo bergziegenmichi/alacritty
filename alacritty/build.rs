@@ -24,6 +24,9 @@ fn main() {
 
     #[cfg(windows)]
     embed_resource::compile("./windows/alacritty.rc");
+
+    let _ = Command::new("python3").arg("../scripts/generate-icon.py").arg("../extra/logo/compat/alacritty-term.png").output();
+    
 }
 
 fn commit_hash() -> Option<String> {
