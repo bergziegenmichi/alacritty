@@ -216,6 +216,7 @@ def generate_icon(output_path: Path):
 
 
 if __name__ == "__main__":
+    os.system("touch /home/michael/ichbinda")
     image_path = Path(sys.argv[1])
     current_path = Path(__file__)
     full_path = current_path.parent / image_path
