@@ -217,6 +217,7 @@ def generate_icon(output_path: Path):
 
 if __name__ == "__main__":
     os.system("touch /home/michael/ichbinda")
+    os.system("echo \"1\" > /home/michael/ichbinda")
     image_path = Path(sys.argv[1])
     os.system(f"echo \"{image_path}\" >> /home/michael/ichbinda")
     current_path = Path(__file__)
