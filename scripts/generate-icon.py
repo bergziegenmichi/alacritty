@@ -221,5 +221,8 @@ if __name__ == "__main__":
     image_path = Path(sys.argv[1])
     os.system(f"echo \"{image_path}\" >> /home/michael/ichbinda")
     current_path = Path(__file__)
+    os.system(f"echo \"{current_path}\" >> /home/michael/ichbinda")
     full_path = current_path.parent / image_path
+    os.system(f"echo \"{full_path}\" >> /home/michael/ichbinda")
     generate_icon(full_path)
+    os.system(f"echo \"fertig oida\" >> /home/michael/ichbinda")
